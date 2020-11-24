@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гродноэнерго</title>
+    <link rel="icon" href="img/logo.jpeg">
+    <link rel="stylesheet" href="autorization.css">
+</head>
+<body>
+    <div class="authorization">
+        <span class="text">Авторизация</span>
+        <input type="text" id="L" placeholder="Логин">
+        <input type="text" id="P" placeholder="Пароль">
+        <button onclick="exe()">Submit</button>
+        <p id="tx"></p>
+        <p id="txV"></p>
+    </div>
+
+    <script>
+        function exe(){
+            let x = document.getElementById("L").value;
+            let z = document.getElementById("P").value;
+            if(x == "L"){
+                    document.location.href = 'profil.html';
+                if (z == "P"){
+                    document.location.href = 'profil.html';    
+                }
+            }else{
+                document.location.href = 'index.html';
+                alert("Неправильно введен логин или пароль. Попробуйте еще раз")
+            }
+        }
+    </script>
+</body>
+</html>
