@@ -50,11 +50,62 @@ header{
     width: 90%;
     margin-left: 5%;
 }
+.main_info{
+    display: flex;
+    justify-content: space-around;
+}
 .main_title{
-    margin-left: 44%;
     padding: 1.5%;
     font-size: 210%;
     font-family: 'Roborto', sans-serif;
+}
+.main_cards_title{
+    width: 120px;
+    height: 50px;
+    margin-left: 85%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 0.6%;
+    border: 2px solid rgba(122, 122, 122, 0.658);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.39);
+    color: rgb(29, 29, 29);
+    font-family: "Roborto", sans-serif;
+    font-size: 100%;
+}
+.main_cards_title:hover{
+    cursor: pointer;
+    border: 2px solid rgb(179, 178, 178);
+    background-color: rgba(220, 220, 220, 0.651);
+    color: rgb(61, 61, 61);
+}
+.main_cards_title:focus{
+    cursor: pointer;
+    outline: none;
+}
+.form{
+    display: none;
+}
+input {
+    width: 580px;
+    height: 30px;
+    margin: 0 0 1.5% 8%;
+}
+#submit{
+    width: 120px;
+    height: 35px;
+    margin-left: 50%;
+    margin-bottom: 3%;
+    padding: 0.6%;
+    border: 2px solid rgba(122, 122, 122, 0.658);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.39);
+    color: rgb(29, 29, 29);
+    font-family: "Roborto", sans-serif;
+    font-size: 100%;
+}
+#submit:focus{
+    outline: none;
 }
 .main_title_hr{
     border: 1px solid rgba(110, 110, 110, 0.781);
@@ -207,8 +258,13 @@ header{
     width: 50%;
     margin-left: 1%;
 }
+
 .branches_info_contact_title{
     text-align: center;
+}
+.branches_info_contact p a{
+    color: rgb(42, 60, 163);
+    text-decoration: none;
 }
 .branches_info_map{
     width: 45%;
@@ -260,6 +316,44 @@ header{
     color: rgb(61, 110, 167);
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+ul.breadcrumb {
+    padding: 10px 20px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 /* .sidebar{
     background-color: rgb(188, 220, 221);

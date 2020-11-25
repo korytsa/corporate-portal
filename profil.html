@@ -49,20 +49,23 @@
 
 
 
-    <!-- <div class="sidebar">
-        <span class="sidebar_title">Содержание раздела</span>
-        <ul>
-            <li><a class="sidebar_item" href="">1</a></li>
-            <li><a class="sidebar_item" href="">2</a></li>
-            <li><a class="sidebar_item" href="">3</a></li>
-            <li><a class="sidebar_item" href="">4</a></li>
-            <li><a class="sidebar_item" href="">5</a></li>
-            <li><a class="sidebar_item" href="">6</a></li>
-        </ul>
-    </div> -->
-
     <div class="main">
+        <div class="main_info">
+            <ul class="breadcrumb">
+                <li><a href="profil.html">Главная</a></li>
+                <li>Новости</li>
+            </ul>
         <div class="main_title">Новости</div>
+        <div class="main_cards_add">
+            <button class="main_cards_title">Добавить новость</button>
+            <div class="form">
+                <input type="text" placeholder="Заголовок новости" id="name"><br>
+                <input type="text" placeholder="Вставьте ссылку на изображение" id="photo"><br>
+                <input type="text" placeholder="Описание новости" id="about"><br>
+                <input type="submit" name="Отправить" id="submit">
+                </div>
+            </div>
+        </div>
         <hr class="main_title_hr">
         <div class="main_cards">
 
@@ -130,10 +133,10 @@
             </div>
         </div>
     </div>
-
+    
     <footer>
         <div class="down">Гродноэнерго 2020</div>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
