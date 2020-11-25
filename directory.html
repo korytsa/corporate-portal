@@ -7,11 +7,12 @@
     <link rel="icon" href="img/logo.jpeg">
     <link rel="stylesheet" href="style1.css">
 </head>
+
 <body>
     <header>
         <div class="container">
         <a href="profil.html" class="header_item">
-            <img src="img/logo.jpeg" alt="Grodnoenergo logo" class="logo">
+            <img src="img/en.png" alt="Grodnoenergo logo" class="logo">
         </a>
         <div class="menu">
             <a class="menu_item" href="profil.html">Главная</a>
@@ -45,8 +46,123 @@
         </div>
     </div>
     </header>
+    
+    
+    <div class="directory">
+        <div class="directory_list" id="first">
+            <span class="directory_list_title">РУП "Гродноэнерго"</span>
+            <ul class="directory_list2" id="second">
+                <li class="directory_list_subtitle">Аппарат управления РУП "Гродноэнерго"
+                    <ul class="directory_list_item">
+                        <li>Центральная диспетчерская служба</li>
+                        <li>Служба электрических сетей</li>
+                        <li class="bux">Бухгалтерия</li>
+                        <li>Служба эксплуатации и ремонта элетрооборудования</li>
+                        <li>Теплотехническая служба</li>
+                        <li>Служба перспективного развития</li>
+                        <li>Производственно-технический отдел</li>
+                        <li>Служба внутреннего контроля</li>
+                        <li>Юридическая служба</li>
+                        <li>Отдел кадров</li>
+                        <li>Финансовый отдел</li>
+                    </ul>
+                </li>
+                <li>Гродненские электрические сети</li>
+                <li>Волковысские электрические сети</li>
+                <li>Лидские электрические сети</li>
+                <li>Ошмянские электрические сети</li>
+                <li>Гродненская теплоэлектроцентраль-2</li>
+                <li>Гродненские тепловые сети</li>
+                <li>Лидские тепловые сети</li>
+                <li>Учебный центр "Гродноэнерго"</li>
+                <li>Санаторий "Энергетик"</li>
+                <li>Агрофирма "Старый дворец"</li>
+                <li>Прочие</li>
+            </ul>
+        </div>
 
-    <!-- <div class="sidebar">
+        <div class="directory_info" id="third">
+            <table>
+                <span class="directory_info_text">Сектор по внедрению и сопровождению программ автоматизации бухгалтерского учета</span>
+                <hr>
+                <tr class="start">
+                    <td>Должность и ФИО</td>
+                    <td>Телефон</td>
+                    <td>Мобильный</td>
+                    <td>E-mail</td>            
+                </tr>
+                <tr>
+                    <td>РУП "Гродноэнерго" <p>Бухгалтерия</p> <p>Начальник отдела</p><p>Раик Дарья Леонидовна</p></td>
+                    <td>22-30, <p>75-98-72</p></td>
+                    <td> (44) 532-16-18</td>   
+                    <td>lovemijob@mail.ru</td>          
+                </tr>
+                <tr>
+                    <td>РУП "Гродноэнерго" <p>Бухгалтерия</p> <p>Ведущий отдела</p><p>Бойко Виталина Геннадьевна</p></td>
+                    <td>22-23, <p>75-08-71</p></td>
+                    <td> (44) 532-16-18</td>   
+                    <td>glavbux@mail.ru</td>          
+                </tr>
+                <tr>
+                    <td>РУП "Гродноэнерго" <p>Бухгалтерия</p> <p>Бухгалтер</p><p>Васильева Анна Витальевна</p></td>
+                    <td>21-98, <p>75-98-11</p></td>
+                    <td> (44) 532-16-18</td>   
+                    <td>imsuper@mail.ru</td>          
+                </tr>
+                <tr>
+                    <td>РУП "Гродноэнерго" <p>Бухгалтерия</p> <p>Бухгалтер</p><p>Семашко Карина Валерьевна</p></td>
+                    <td>53-60, <p>75-22-74</p></td>
+                    <td> (44) 532-16-18</td>   
+                    <td>rost_dav@mail.ru</td>          
+                </tr>
+                <tr>
+                    <td>РУП "Гродноэнерго" <p>Бухгалтерия</p> <p>Бухгалтер</p><p>Быков Владислав Константинович</p></td>
+                    <td>47-20, <p>75-03-02</p></td>
+                    <td> (44) 532-16-18</td>   
+                    <td>buqwe@mail.ru</td>          
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="down">© 2010-2020 РУП «Гродноэнерго». 
+            <p>Все права защищены.</p> 
+            Перепечатка материалов разрешена с указанием авторства.</div>
+    </footer>
+
+    <script>
+        let menuElem = document.getElementById('first');
+        let titleElem = menuElem.querySelector('.directory_list_title');
+        
+        titleElem.onclick = function() {
+            menuElem.classList.toggle('open');
+        }
+        let menuElem2 = document.getElementById('second');
+        let titleElem2 = menuElem.querySelector('.directory_list_subtitle');
+        
+        titleElem2.onclick = function() {
+            menuElem2.classList.toggle('open');
+        }
+
+        let box = document.getElementById('third');
+        let info = document.querySelector('.bux')
+
+        info.onclick = function(){
+            box.classList.toggle('open');
+        }
+
+        // function viewDiv(){
+        // document.getElementById("third").style.display = "flex";
+        // }
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- <div class="sidebar">
         <span class="sidebar_title">Содержание раздела</span>
         <ul>
             <li><a class="sidebar_item" href="">1</a></li>
@@ -58,11 +174,6 @@
         </ul>
     </div> -->
 
+
+
     
-
-    <footer>
-        <div class="down">Гродноэнерго 2020</div>
-    </footer>
-
-</body>
-</html>

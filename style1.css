@@ -6,7 +6,7 @@ body{
 header{
     margin-left: 5%;
     background-color: rgb(255, 255, 255);
-    height: 120px;
+    height: 100px;
 }
 .container{
     display: flex;
@@ -16,7 +16,7 @@ header{
 }
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 80%;
     margin-top: 1.5%;
     margin-right: 3%;
@@ -33,9 +33,10 @@ header{
     text-decoration: underline;
 }
 .logo{
-    margin-left: 50%;
-    width: 150px;
-    height: 120px;
+    margin-top: 5%;
+    margin-left: 8%;
+    width: 350px;
+    height: 70px;
 }
 
 
@@ -151,13 +152,18 @@ input {
 .down{
     display: flex;
     justify-content: center;
-    max-width: 86%;
-    margin-left: 5%;
-    padding: 2%;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: rgba(12, 100, 173, 0.801);
-    font-size: 140%;
+    font-size: 110%;
     font-family: "Roborto", sans-serif;
     color: rgb(29, 29, 29);
+}
+.down p{
+    margin: 0.2%;
+
 }
 
 
@@ -169,8 +175,10 @@ input {
 
 
 .dropdown {
-    margin-top: 4.8%;
-    padding-right: 5.5%;
+    margin-top: 4.9%;
+    padding-right: 4%;
+    padding-left: 4%;
+
 }
 .dropdown-content {
     display: none;
@@ -327,7 +335,7 @@ input {
 
 
 ul.breadcrumb {
-    padding: 10px 20px;
+    padding: 15px 20px;
     list-style: none;
 }
 ul.breadcrumb li {
@@ -352,18 +360,106 @@ ul.breadcrumb li a:hover {
 
 
 
-
-
-
-/* .sidebar{
-    background-color: rgb(188, 220, 221);
-    width: 28%;
-    margin-left: 3%;
-    margin-top: 1%;
-    padding: 1%;
+.directory{
+    background-color: rgba(204, 204, 204, 0.281);
+    border-radius: 2% 2% 0 0;
+    width: 86%;
+    margin-left: 5%;
+    padding: 2%;
+    font-family: "Roborto", sans-serif;
+    display: flex;
 }
-.sidebar_title{
-    margin-left: 25%;
+.directory_list{
+    width: 55%;
+}
+.directory_list_title{
+    font-size: 22px;
+    cursor: pointer;
+
+}
+.directory_list ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+.directory_list ul li{
+    padding-top: 2%;
+    font-size: 120%;
+}
+.directory_list_title::before {
+    content: '▶ ';
+    font-size: 80%;
+    color: rgb(61, 110, 167);
+}
+.directory_list.open .directory_list_title::before {
+    content: '▼ ';
+}
+.directory_list.open ul {
+    display: block;
+}
+.directory_list ul li::before{
+    content: '▶ ';
+    font-size: 90%;
+    color: rgb(61, 110, 167);
+}
+.directory_list ul li ul li::before{
+    content: ' ○ ';
     font-size: 130%;
-    font-family: 'Roborto', sans-serif;
-} */
+}
+.directory_list_item{
+    font-size: 80%;
+}
+.directory_list2 ul li{
+    display: none;
+}
+.directory_list2.open .directory_list_subtitle::before {
+    content: '▼ ';
+}
+.directory_list2.open ul li{
+    display: block;
+}
+.directory_list_item li:hover, .directory_list_item a:hover{
+    cursor: pointer;
+    color: rgb(61, 110, 167);
+}
+.directory_info{
+    display: none;
+}
+.directory_info.open{
+    display: block;
+    width: 75%;
+}
+table{
+    padding-top: 0%;
+}
+tr:first-child{
+    color: rgb(0, 0, 0);
+    background-color: rgba(61, 110, 167, 0.281);
+    text-align: center;
+    padding: 0%;
+}
+td:first-child{
+    width: 25%;
+}
+td{
+    width: 10%;
+    padding: 2% 0 1% 1%;
+}
+td p{
+    padding-top: 1%;
+    margin: 0%;
+}
+tr:nth-child(odd){
+    background-color: rgba(204, 204, 204, 0.336);
+}
+td:nth-last-child(2n-1), td:nth-last-child(2){
+    text-align: center;
+}
+.directory_info_text{
+    font-size: 160%;
+    font-weight: 700;
+    padding-top: 5%;
+    text-align: center;
+}
+
