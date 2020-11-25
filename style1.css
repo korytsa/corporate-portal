@@ -55,7 +55,6 @@ header{
     justify-content: space-around;
 }
 .main_title{
-    /* margin-left: 44%; */
     padding: 1.5%;
     font-size: 210%;
     font-family: 'Roborto', sans-serif;
@@ -90,12 +89,12 @@ header{
 input {
     width: 580px;
     height: 30px;
-    margin: 0 0 1.5% 20%;
+    margin: 0 0 1.5% 8%;
 }
 #submit{
     width: 120px;
     height: 35px;
-    margin-left: 60%;
+    margin-left: 50%;
     margin-bottom: 3%;
     padding: 0.6%;
     border: 2px solid rgba(122, 122, 122, 0.658);
@@ -259,8 +258,13 @@ input {
     width: 50%;
     margin-left: 1%;
 }
+
 .branches_info_contact_title{
     text-align: center;
+}
+.branches_info_contact p a{
+    color: rgb(42, 60, 163);
+    text-decoration: none;
 }
 .branches_info_map{
     width: 45%;
@@ -312,6 +316,44 @@ input {
     color: rgb(61, 110, 167);
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+ul.breadcrumb {
+    padding: 10px 20px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 /* .sidebar{
     background-color: rgb(188, 220, 221);
